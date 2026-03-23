@@ -1,0 +1,117 @@
+/* ============================================================
+   tokens.css — CSS custom properties (design tokens)
+   Default values = artist palette, light theme.
+   Overridden by palette-*.css and themes.css.
+   ============================================================ */
+
+:root {
+  /* ── Color roles (overridden by palette + theme files) ── */
+  --color-bg:            #F5F0E8;
+  --color-bg-secondary:  #EDE8E0;
+  --color-bg-tertiary:   #E4DDD4;
+  --color-surface:       #FDFAF5;
+  --color-surface-raised:#FFFFFF;
+
+  --color-text:          #1C1917;
+  --color-text-secondary:#6B6560;
+  --color-text-muted:    #9D9690;
+
+  --color-accent:        #C4784B;
+  --color-accent-hover:  #A8603A;
+  --color-accent-text:   #FFFFFF;  /* text ON accent bg */
+
+  --color-border:        #DDD8CF;
+  --color-border-strong: #B8B2A8;
+
+  /* Status */
+  --color-draft:         #D97706;
+  --color-draft-bg:      #FEF3C7;
+  --color-reviewed:      #059669;
+  --color-reviewed-bg:   #D1FAE5;
+  --color-error:         #DC2626;
+  --color-error-bg:      #FEE2E2;
+
+  /* ── Typography ── */
+  --font-display: 'Georgia', 'Times New Roman', serif;
+  --font-body:    system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'Courier New', 'Courier', monospace;
+
+  --text-xs:   0.6875rem;   /* 11px */
+  --text-sm:   0.8125rem;   /* 13px */
+  --text-base: 1rem;         /* 16px */
+  --text-lg:   1.125rem;    /* 18px */
+  --text-xl:   1.25rem;     /* 20px */
+  --text-2xl:  1.5rem;      /* 24px */
+  --text-3xl:  1.875rem;    /* 30px */
+  --text-4xl:  2.25rem;     /* 36px */
+  --text-5xl:  3rem;        /* 48px */
+  --text-6xl:  4rem;        /* 64px */
+  --text-7xl:  5rem;        /* 80px */
+
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+  --leading-loose:   2;
+
+  --tracking-tight:  -0.03em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.08em;
+  --tracking-wider:  0.15em;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold:   700;
+
+  /* ── Spacing ── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── Layout ── */
+  --nav-height:    4rem;
+  --max-width:     1440px;
+  --content-width: 980px;
+  --gallery-gap:   1.5rem;
+
+  /* ── Borders & radius ── */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* ── Shadows ── */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md:  0 4px 12px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.14), 0 4px 8px rgba(0,0,0,0.08);
+  --shadow-xl:  0 20px 60px rgba(0,0,0,0.18);
+
+  /* ── Transitions ── */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+  --transition-slower: 600ms ease;
+
+  /* ── Z-index ── */
+  --z-below:   -1;
+  --z-base:     0;
+  --z-raised:  10;
+  --z-dropdown:50;
+  --z-nav:    100;
+  --z-modal:  200;
+  --z-toast:  300;
+
+  /* ── Edit mode ── */
+  --edit-border: 2px dashed var(--color-accent);
+  --edit-bg:     rgba(196, 120, 75, 0.05);
+}
